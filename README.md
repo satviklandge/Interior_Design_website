@@ -61,18 +61,54 @@ A responsive, multi-page interior design company website built with HTML, CSS, B
 
 ##  Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| HTML5 | Page structure & markup |
-| CSS3 | Custom styling |
-| Bootstrap 4 | Responsive grid & UI components |
-| JavaScript / jQuery | Interactivity & DOM manipulation |
-| Owl Carousel | Service & team sliders |
-| Isotope.js | Portfolio filtering |
-| Lightbox2 | Portfolio image viewer |
-| Font Awesome 5 | Icons |
-| Flaticon | Custom interior design icons |
-| Google Fonts | Montserrat & Oswald typography |
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Technologies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Languages</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Framework</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Bootstrap_4-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+        <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Libraries</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Owl_Carousel-E44D26?style=for-the-badge&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Isotope.js-2d88a8?style=for-the-badge&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Lightbox2-FF6B35?style=for-the-badge&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Icons & Fonts</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Font_Awesome_5-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Flaticon-FF7139?style=for-the-badge&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Tools</b></td>
+      <td>
+        <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
