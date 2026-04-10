@@ -212,10 +212,194 @@
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
+                            <!-- Contact No -->
+
                             <div class="control-group">
-                                <textarea class="form-control p-4" rows="6" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                <label class="font-weight-bold text-uppercase mb-1" for="contact">Your Contact No. <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control p-4" id="contact"
+                                    placeholder="valid 10 digit mobile no." required="required" pattern="[0-9]{10}"
+                                    data-validation-required-message="Please enter your contact number" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <!-- Project Type -->
+                            <div class="control-group">
+                                <label class="font-weight-bold text-uppercase mb-2 d-block">Project Type <span
+                                        class="text-danger">*</span></label>
+                                <div class="row">
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_office" name="projectType"
+                                                class="custom-control-input" value="Office / Store"
+                                                onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_office">Office / Store</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_bungalow" name="projectType"
+                                                class="custom-control-input" value="Bungalow / Villa"
+                                                onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_bungalow">Bungalow /
+                                                Villa</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_2bhk" name="projectType"
+                                                class="custom-control-input" value="2 BHK" onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_2bhk">2 BHK</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_3bhk" name="projectType"
+                                                class="custom-control-input" value="3 BHK" onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_3bhk">3 BHK</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_4bhk" name="projectType"
+                                                class="custom-control-input" value="4 BHK" onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_4bhk">4 BHK</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="pt_other" name="projectType"
+                                                class="custom-control-input" value="Other" onclick="toggleOtherBox()">
+                                            <label class="custom-control-label" for="pt_other">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Other message box (hidden by default) -->
+                                <div id="otherProjectBox" style="display:none;" class="mt-2">
+                                    <textarea class="form-control p-3" id="otherProjectText" rows="3"
+                                        placeholder="Please describe your project type..."></textarea>
+                                </div>
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <!-- JavaScript for toggle -->
+                            <script>
+                                function toggleOtherBox() {
+                                    var selected = document.querySelector('input[name="projectType"]:checked');
+                                    var box = document.getElementById('otherProjectBox');
+                                    if (selected && selected.value === 'Other') {
+                                        box.style.display = 'block';
+                                    } else {
+                                        box.style.display = 'none';
+                                        document.getElementById('otherProjectText').value = '';
+                                    }
+                                }
+                            </script>
+
+                            <!-- Status of Possession -->
+                            <div class="control-group">
+                                <label class="font-weight-bold text-uppercase mb-2 d-block">Status of Possession <span
+                                        class="text-danger">*</span></label>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="sp_under" name="possession"
+                                                class="custom-control-input" value="Under Possession">
+                                            <label class="custom-control-label" for="sp_under">Under Possession</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="sp_month" name="possession"
+                                                class="custom-control-input" value="Within a month">
+                                            <label class="custom-control-label" for="sp_month">Within a month</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="sp_2to3" name="possession"
+                                                class="custom-control-input" value="Within 2-3 months">
+                                            <label class="custom-control-label" for="sp_2to3">Within 2-3 months</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="sp_6months" name="possession"
+                                                class="custom-control-input" value="Within 6 months">
+                                            <label class="custom-control-label" for="sp_6months">Within 6 months</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="sp_year" name="possession"
+                                                class="custom-control-input" value="Within a Year">
+                                            <label class="custom-control-label" for="sp_year">Within a Year</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
+                            <!-- Budget Range -->
+                            <div class="control-group">
+                                <label class="font-weight-bold text-uppercase mb-2 d-block">Budget Range <span
+                                        class="text-danger">*</span></label>
+                                <div class="row">
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_12" name="budgetRange"
+                                                class="custom-control-input" value="Less than 12 lacs">
+                                            <label class="custom-control-label" for="br_12">Less than 12 lacs</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_12to15" name="budgetRange"
+                                                class="custom-control-input" value="12 to 15 lacs">
+                                            <label class="custom-control-label" for="br_12to15">12 to 15 lacs</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_15to20" name="budgetRange"
+                                                class="custom-control-input" value="15 to 20 lacs">
+                                            <label class="custom-control-label" for="br_15to20">15 to 20 lacs</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_20to30" name="budgetRange"
+                                                class="custom-control-input" value="20 to 30 lacs">
+                                            <label class="custom-control-label" for="br_20to30">20 to 30 lacs</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_30to50" name="budgetRange"
+                                                class="custom-control-input" value="30 to 50 lacs">
+                                            <label class="custom-control-label" for="br_30to50">30 to 50 lacs</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="br_above50" name="budgetRange"
+                                                class="custom-control-input" value="Above 50 lacs">
+                                            <label class="custom-control-label" for="br_above50">Above 50 lacs</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-muted mt-2" style="font-size:0.85rem;">Not sure about the budget? Range
+                                    if we
+                                    consider
+                                    intermediate level branded materials (6 years of warranty) including kitchen. a)
+                                    2BHK = 12 to 15
+                                    lacs.
+                                    b) 3BHK = 15 to 20 lacs. c) 4BHK = 20 to 30 lacs. No upper limit for premium
+                                    materials. For
+                                    commercial
+                                    projects you can contact us directly.</p>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -227,6 +411,81 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Success / Error Messages -->
+    <div id="successMsg" class="alert alert-success mt-3" style="display:none;">
+        ✅ Your message has been sent successfully! We will contact you soon.
+    </div>
+    <div id="errorMsg" class="alert alert-danger mt-3" style="display:none;">
+        ❌ Something went wrong. Please try again later.
+    </div>
+
+    </form>
+
+    <!-- ===== EmailJS Submit Script ===== -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Collect radio values
+            var projectType = document.querySelector('input[name="projectType"]:checked');
+            var possession = document.querySelector('input[name="possession"]:checked');
+            var budget = document.querySelector('input[name="budgetRange"]:checked');
+
+            // Collect checkboxes (Scope of Work)
+            var scopeChecked = [];
+            document.querySelectorAll('input[name="scopeOfWork"]:checked').forEach(function (cb) {
+                scopeChecked.push(cb.value);
+            });
+
+            // If "Other" project type, append the description
+            var projectVal = projectType ? projectType.value : 'Not selected';
+            if (projectVal === 'Other') {
+                var otherText = document.getElementById('otherProjectText').value.trim();
+                if (otherText) projectVal = 'Other: ' + otherText;
+            }
+
+            var templateParams = {
+                // ✅ STEP 3: These must match your EmailJS template variables
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                contact_no: document.getElementById('contact').value,
+                subject: document.getElementById('subject') ? document.getElementById('subject').value : 'Contact Form',
+                project_type: projectVal,
+                possession: possession ? possession.value : 'Not selected',
+                scope: scopeChecked.length ? scopeChecked.join(', ') : 'None selected',
+                budget: budget ? budget.value : 'Not selected',
+                // ✅ STEP 4: Set your recipient email in EmailJS template, OR add to_email here
+                to_email: 'YOUR_EMAIL@gmail.com'
+            };
+
+            var btn = document.getElementById('sendMessageButton');
+            btn.disabled = true;
+            btn.innerText = 'Sending...';
+
+            // ✅ STEP 2: Replace with your EmailJS Service ID and Template ID
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function () {
+                    document.getElementById('successMsg').style.display = 'block';
+                    document.getElementById('errorMsg').style.display = 'none';
+                    document.getElementById('contactForm').reset();
+                    document.getElementById('otherProjectBox').style.display = 'none';
+                    btn.disabled = false;
+                    btn.innerText = 'Send Message';
+                }, function (error) {
+                    document.getElementById('errorMsg').style.display = 'block';
+                    document.getElementById('successMsg').style.display = 'none';
+                    console.error('EmailJS error:', error);
+                    btn.disabled = false;
+                    btn.innerText = 'Send Message';
+                });
+        });
+    </script>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     <!-- Contact End -->
 
