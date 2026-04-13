@@ -85,17 +85,16 @@ The site presents the firm's services, portfolio, team, testimonials, and blog i
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
-| Hero Carousel | Auto-sliding fullscreen banner with text overlay and CTA buttons |
-| Isotope Portfolio Filter | Client-side grid filtering by All / Complete / Running / Upcoming |
-| Owl Carousel | Smooth services and testimonials slider |
-| Lightbox Gallery | Click-to-enlarge image viewer for portfolio items |
-| Contact Form | Bootstrap-validated form with PHP email backend |
-| Smooth Scroll | Eased anchor-link navigation throughout |
-| Back to Top | Animated scroll-to-top button on all pages |
-| Fully Responsive | Tested from 320px mobile to wide desktop |
-| Icon Libraries | Font Awesome 5 and Flaticon integration |
+| File | Page | Description |
+|------|------|-------------|
+| `index.html` | **Home** | Full landing page — carousel, about, services, portfolio, team, testimonials, blog |
+| `about.html` | **About** | Detailed company background and values |
+| `service.html` | **Services** | Complete list of interior design offerings |
+| `project.html` | **Projects** | Filterable portfolio of completed & ongoing projects |
+| `blog.html` | **Blog** | Grid layout of all blog articles |
+| `single.html` | **Blog Detail** | Single blog post with full content |
+| `contact.html` | **Contact** | Contact form with embedded map |
+
 
 ---
 
@@ -133,45 +132,47 @@ The site presents the firm's services, portfolio, team, testimonials, and blog i
 
 ```
 Interior_Design_website/
-|
-+-- index.html                  <- Home page (entry point)
-+-- about.html
-+-- service.html
-+-- project.html
-+-- blog.html
-+-- single.html
-+-- contact.html
-|
-+-- css/
-|   +-- style.css               <- All custom styles
-|
-+-- js/
-|   +-- main.js                 <- Carousel, isotope, scroll, back-to-top
-|
-+-- img/
-|   +-- carousel-1.jpg          <- Hero slide 1
-|   +-- carousel-2.jpg          <- Hero slide 2
-|   +-- feature.jpg             <- Why Choose Us section
-|   +-- testimonial.jpg         <- Testimonial section
-|   +-- portfolio-1..6.jpg      <- Portfolio grid images
-|   +-- blog-1..3.jpg           <- Blog card thumbnails
-|
-+-- lib/
-|   +-- owlcarousel/            <- Owl Carousel 2 assets
-|   +-- lightbox/               <- Lightbox2 assets
-|   +-- isotope/                <- Isotope filter library
-|   +-- easing/                 <- jQuery easing plugin
-|   +-- flaticon/               <- Custom flat icon font
-|
-+-- scss/
-|   +-- bootstrap/scss/         <- Bootstrap 4 SCSS source
-|
-+-- mail/
-|   +-- contact.js              <- Form submission handler
-|   +-- jqBootstrapValidation.min.js
-|
-+-- LICENSE
-+-- README.md
+│
+├──  index.html              # Home page
+├──  about.html              # About page
+├──  service.html            # Services page
+├──  project.html            # Projects / Portfolio page
+├──  blog.html               # Blog listing page
+├──  single.html             # Single blog post
+├──  contact.html            # Contact page
+│
+├──  css/
+│   └── style.css              # Main custom stylesheet
+│
+├──  js/
+│   └── main.js                # Main JavaScript (scroll, filters, carousels)
+│
+├──  img/
+│   ├── carousel-1.jpg         # Hero banner images
+│   ├── carousel-2.jpg
+│   ├── portfolio-1.jpg        # Portfolio project images
+│   ├── ...
+│   ├── team-1.jpg             # Team member photos
+│   ├── ...
+│   ├── blog-1.jpg             # Blog post images
+│   └── ...
+│
+├──  lib/
+│   ├── owlcarousel/           # Owl Carousel library
+│   ├── lightbox/              # Lightbox2 library
+│   ├── isotope/               # Isotope filter library
+│   ├── easing/                # jQuery Easing plugin
+│   └── flaticon/              # Flaticon icon font
+│
+├──  scss/
+│   └── bootstrap/scss/        # Bootstrap SCSS source files
+│
+├──  mail/
+│   ├── contact.js             # Contact form handler
+│   └── jqBootstrapValidation.min.js  # Form validation
+│
+├──  LICENSE                 # MIT License
+└──  README.md               # Project documentation
 ```
 
 ---
