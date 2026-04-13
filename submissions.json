@@ -1,0 +1,77 @@
+[
+  {
+    "type": "contact",
+    "timestamp": "2026-04-11T13:41:18.789800",
+    "data": {
+      "name": "Satvik Landge",
+      "email": "satvik@test.com",
+      "contact_no": "9876543210",
+      "subject": "New 3BHK Project",
+      "project_type": "3 BHK",
+      "possession": "Under Possession",
+      "budget": "15 to 20 lacs",
+      "scope": "None selected",
+      "other_project_text": null
+    }
+  },
+  {
+    "type": "contact",
+    "timestamp": "2026-04-11T13:52:05.248206",
+    "data": {
+      "name": "satvik landge",
+      "email": "satviklandge25@gmail.com",
+      "contact_no": "9823516477",
+      "subject": "Changing interiors",
+      "project_type": "Bungalow / Villa",
+      "possession": "Under Possession",
+      "budget": "Less than 12 lacs",
+      "scope": "None selected",
+      "other_project_text": null
+    }
+  },
+  {
+    "type": "contact",
+    "timestamp": "2026-04-11T13:55:26.880099",
+    "data": {
+      "name": "satvik landge",
+      "email": "satviklandge25@gmail.com",
+      "contact_no": "9823516477",
+      "subject": "Changing interiors",
+      "project_type": "Bungalow / Villa",
+      "possession": "Within 2-3 months",
+      "budget": "Less than 12 lacs",
+      "scope": "None selected",
+      "other_project_text": null
+    }
+  },
+  {
+    "type": "contact",
+    "timestamp": "2026-04-11T13:58:30.677980",
+    "data": {
+      "name": "Test Email Delivery",
+      "email": "sanulandge85@gmail.com",
+      "contact_no": "9876543210",
+      "subject": "Email Test from FastAPI",
+      "project_type": "2 BHK",
+      "possession": "Under Possession",
+      "budget": "12 to 15 lacs",
+      "scope": "None selected",
+      "other_project_text": null
+    }
+  },
+  {
+    "type": "contact",
+    "timestamp": "2026-04-11T14:11:57.680116",
+    "data": {
+      "name": "satvik landge",
+      "email": "satviklandge25@gmail.com",
+      "contact_no": "9823516477",
+      "subject": "Changing interiors",
+      "project_type": "Office / Store",
+      "possession": "Under Possession",
+      "budget": "Less than 12 lacs",
+      "scope": "None selected",
+      "other_project_text": null
+    }
+  }
+]
